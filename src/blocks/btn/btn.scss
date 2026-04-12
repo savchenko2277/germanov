@@ -1,0 +1,18 @@
+@use 'lib' as *;
+
+.btn {
+	$self: &;
+
+	@include flex-center;
+
+	background: $green;
+	color: #ffffff;
+	font-weight: 500;
+	padding: 10px 60px;
+	border-radius: 8px;
+	transition: all $transition;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

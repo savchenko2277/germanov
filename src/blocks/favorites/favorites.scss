@@ -1,0 +1,27 @@
+@use 'lib' as *;
+
+.favorites {
+	$self: &;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: fluid(40px, 24px);
+		margin-bottom: fluid(32px, 24px);
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: fluid(16px, 8px);
+
+		@include media("<=md") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+}

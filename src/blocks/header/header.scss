@@ -1,0 +1,375 @@
+@use 'lib' as *;
+
+.header {
+	$self: &;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr max-content;
+	transition: all $transition;
+	z-index: 10;
+
+	&.is-open {
+		#{$self}__menu {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+
+		#{$self}__burger {
+			span {
+				opacity: 0;
+			}
+
+			&::before {
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			}
+
+			&::after {
+				bottom: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(50%) rotate(-45deg);
+			}
+		}
+	}
+
+	&.is-scroll {
+		grid-template-rows: 0fr max-content;
+
+		@include media("<=lg") {
+			grid-template-rows: auto;
+		}
+	}
+
+	&__top {
+		background: $background;
+
+		@include media("<=lg") {
+			display: none;
+		}
+	}
+
+	&__top-container {
+		padding: 16px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__info {}
+
+	&__navigation {}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 24px;
+		font-weight: 500;
+	}
+
+	&__list-item {
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__tel {
+		font-size: 16px;
+		font-weight: 700;
+
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__main {
+		background: $backgroundSecond;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__main-container {
+		padding: 12px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 32px;
+	}
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+
+		img {
+			height: fluid(30px, 20px);
+			width: auto;
+			object-fit: contain;
+		}
+
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__desc {
+		color: #149F58;
+
+		@include media("<=md") {
+			display: none;
+		}
+	}
+
+	&__middle {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 8px;
+
+		@include media("<=md") {
+			display: none;
+		}
+	}
+
+	&__catalog-btn {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 6px;
+		font-weight: 500;
+		background: $green;
+		color: #ffffff;
+		border-radius: 12px;
+		padding: 12px 24px;
+		font-size: 16px;
+
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__search {
+		height: 44px;
+		display: flex;
+		flex-direction: row;
+		background: $green;
+		border-radius: 8px;
+
+		@include media("<=md") {
+			width: 100%;
+		}
+	}
+
+	&__search-input.custom-input {
+		width: fluid(392px, 180px);
+
+		@include media("<=md") {
+			width: 100%;
+		}
+	}
+
+	&__search-btn {
+		padding: 10px;
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2px;
+		transition: all $transition;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+
+		@include media("<=md") {
+			span {
+				display: none;
+			}
+		}
+
+	}
+
+	&__menu {
+		display: none;
+
+		@include media("<=md") {
+			position: fixed;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			background: $backgroundSecond;
+			display: block;
+
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: all $transition;
+
+			#{$self}__catalog-btn {
+				width: 100%;
+			}
+
+			#{$self}__list {
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				gap: 16px;
+
+				li {
+					font-size: 18px;
+				}
+			}
+
+			&.active {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	&__menu-container {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		padding-top: 60px;
+		gap: 24px;
+	}
+
+	&__burger {
+		@include flex-center;
+
+		height: 16px;
+		width: 22px;
+		position: relative;
+		z-index: 2;
+
+		@include media(">md") {
+			display: none;
+		}
+
+		span {
+			width: 100%;
+			height: 2px;
+			background: #3C3C43;
+			border-radius: 2px;
+			transition: all $transition;
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: #3C3C43;
+			border-radius: 2px;
+			top: 0;
+			left: 0;
+			transition: all $transition;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background: #3C3C43;
+			border-radius: 2px;
+			bottom: 0;
+			left: 0;
+			transition: all $transition;
+		}
+
+		@include media(">lg") {
+			display: none
+		}
+	}
+
+	&__catalog {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: #ffffff, $alpha: 0.7);
+		z-index: 2;
+		padding-top: 120px;
+		transition: all $transition;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+
+		&.active {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+
+		@include media("<=md") {
+			padding-top: 24px;
+		}
+	}
+
+	&__catalog-container {
+		position: relative;
+		padding-top: 40px;
+	}
+
+	&__catalog-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+
+		width: fluid(32px, 28px);
+		height: fluid(32px, 28px);
+		cursor: pointer;
+	}
+
+}

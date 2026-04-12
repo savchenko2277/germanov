@@ -1,0 +1,33 @@
+@use 'lib' as *;
+
+.simple {
+	$self: &;
+
+	&__container {
+
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(32px, 16px);
+		max-width: 780px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: fluid(64px, 32px);
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		font-size: fluid(18px, 14px);
+	}
+
+	&__btn {
+		width: fit-content;
+	}
+
+}

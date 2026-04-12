@@ -1,0 +1,81 @@
+@use 'lib' as *;
+
+.news {
+	$self: &;
+
+	&__container {
+
+	}
+
+	&__top {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: fluid(42px, 24px);
+		gap: 16px;
+
+		@include media("<=xs") {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__title {
+		font-size: fluid(40px, 32px);
+		font-weight: 600;
+	}
+
+	&__navigation {
+
+	}
+
+	&__swiper {
+
+	}
+
+	&__slide.swiper-slide {
+		border-radius: 12px;
+		box-shadow: inset 0 0 0 1px #DBDBDB;
+		min-height: 497px;
+		display: flex;
+		flex-direction: column;
+		transition: all $transition;
+
+		&:hover {
+			box-shadow: inset 0 0 0 1px $green;
+		}
+	}
+
+	&__slide-img {
+		object-fit: cover;
+		width: 100%;
+		height: 180px;
+		border-radius: 12px;
+	}
+
+	&__slide-content {
+		display: flex;
+		flex-direction: column;
+		padding: 16px 12px;
+		flex: 1 1 auto;
+	}
+
+	&__slide-title {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 150%;
+	}
+
+	&__slide-text {
+		line-height: 150%;
+				margin-bottom: 16px;
+	}
+
+	&__slide-date {
+		align-self: center;
+		margin-top: auto;
+	}
+
+}

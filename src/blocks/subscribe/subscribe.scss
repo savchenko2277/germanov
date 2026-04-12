@@ -1,0 +1,56 @@
+@use 'lib' as *;
+
+.subscribe {
+	$self: &;
+
+	position: relative;
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		width: min(536px, calc(100% - $containerGap * 2));
+		margin: 0 auto;
+		max-width: 536px;
+		padding: 48px 0;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: fluid(24px, 18px);
+		text-align: center;
+		margin-bottom: 24px;
+		line-height: 150%;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+
+		@include media("<=xs") {
+			flex-direction: column;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba($color: $backgroundSecond, $alpha: 0.5);
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top center;
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+@use 'lib' as *;
+
+.about {
+	$self: &;
+
+	&__container {
+		padding: fluid(36px, 24px) fluid(24px, 16px);
+		background: #ffffff;
+		border-radius: 12px;
+		box-shadow: 0 0 0 1px #E3DEE0;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: fluid(24px, 18px);
+		margin-bottom: fluid(32px, 16px);
+		line-height: 150%;
+	}
+
+	&__content {
+		line-height: 140%;
+
+		ul {
+			padding-left: 24px;
+			li {
+				list-style-type: disc;
+			}
+		}
+	}
+
+}
