@@ -2,7 +2,424 @@
 @@include("_header.html")
 
 <main class="main">
-    <p>Дизайн в разработке.</p>
+    <div class="breadcambs breadcambs_card container">
+        <ul class="breadcambs__list">
+            <li class="breadcambs__list-item"><a href="#">Главная</a></li>
+            <li class="breadcambs__list-item"><a href="#">Каталог</a></li>
+            <li class="breadcambs__list-item"><a href="#">Розы</a></li>
+        </ul>
+    </div>
+    <section data-card-js class="card">
+        <div class="card__container container">
+            <div class="card__gallery">
+                <div class="card__gallery-photo">
+                    <img class="active" loading="lazy" src="./img/gallery/1.webp" alt="">
+                    <img loading="lazy" src="./img/gallery/2.webp" alt="">
+                    <img loading="lazy" src="./img/gallery/1.webp" alt="">
+                    <img loading="lazy" src="./img/gallery/2.webp" alt="">
+                    <img loading="lazy" src="./img/gallery/1.webp" alt="">
+                    <img loading="lazy" src="./img/gallery/2.webp" alt="">
+                </div>
+                <div class="card__gallery-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <img loading="lazy" src="./img/gallery/1.webp" alt="" class="card__gallery-slide swiper-slide">
+                        <img loading="lazy" src="./img/gallery/2.webp" alt="" class="card__gallery-slide swiper-slide">
+                        <img loading="lazy" src="./img/gallery/1.webp" alt="" class="card__gallery-slide swiper-slide">
+                        <img loading="lazy" src="./img/gallery/2.webp" alt="" class="card__gallery-slide swiper-slide">
+                        <img loading="lazy" src="./img/gallery/1.webp" alt="" class="card__gallery-slide swiper-slide">
+                        <img loading="lazy" src="./img/gallery/2.webp" alt="" class="card__gallery-slide swiper-slide">
+                    </div>
+                </div>
+            </div>
+            <div class="card__info">
+                <div class="card__top">
+                    <div class="card__top-content">
+                        <h1 class="card__title">Роза Пурпл Сплэш плетистая</h1>
+                        <a href="#" class="card__category">PURPLE SPLASH</a>
+                    </div>
+                    <div class="card__actions">
+                        <button type="button" class="card__action">
+                            <img src="./img/icons/heart-gray.svg" alt="">
+                        </button>
+                        <button type="button" class="card__action">
+                            <img src="./img/icons/share-gray.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card__middle">
+                    <div class="card__rows">
+                        <p class="card__row">Вес: 0.60 кг</p>
+                        <p class="card__row">Артикул: 10-98-1279</p>
+                        <p class="card__row">Продавец: ИНН 350902477384</p>
+                    </div>
+                    <div class="card__side">
+                        <div class="card__side-column">
+                            <div class="card__price">
+                                270 ₽ <b>640 ₽</b>
+                            </div>
+                            <p class="card__new">
+                                Новинка
+                                <img loading="lazy" src="./img/icons/arrow-right-light.svg" alt="">
+                            </p>
+                        </div>
+                        <div class="card__side-column">
+                            <button type="button" class="card__btn btn">
+                                <img src="./img/icons/basket-light.svg" alt="">
+                                В корзину
+                            </button>
+                            <button type="button" class="card__btn btn btn-light">
+                                Купить в 1 клик
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__content-title">
+                        Описание и агротехника
+                    </h2>
+                    <div class="card__text">
+                        <p>
+                            <b>Роза Пурпл Сплэш плетистая</b> - кусты данного сорта отличаются густотой и правильной
+                            раскидистой кроной,
+                            достигающей 150-160 см. Высота куста составляет 300-400 см. Побеги покрывают глянцевые
+                            ярко-зеленые
+                            листья и небольшое количество шипов. Роза выпускает до 15 новых побегов за сезон.
+                        </p>
+                        <p>
+                            Бокаловидные бутоны клубнично-красного цвета покрыты белыми штрихами и тонкими черточками.
+                            Окраска
+                            цветка варьируется от винно-фиолетового с четкими белыми полосками до темно-малинового. В
+                            диаметре он
+                            достигает 8-9 см. По количеству лепестков цветок относится к полумахровому типу.
+                            Располагается на кусте в
+                            соцветиях от 10 до 15 цветков на стебле. Они ароматные, в запахе присутствуют сладость и
+                            умеренные
+                            яблочные нотки.
+                        </p>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__content-title">
+                        Характеристики
+                    </h2>
+                    <div class="card__content-rows">
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Селекционер (оригинатор)
+                            </h3>
+                            <p class="card__content-row-text">
+                                Tom Carruth (США)
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Группа
+                            </h3>
+                            <p class="card__content-row-text">
+                                Плетистые розы
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Цветение
+                            </h3>
+                            <p class="card__content-row-text">
+                                Повторное (2 раза за сезон)
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Цвет (окрас цветка)
+                            </h3>
+                            <p class="card__content-row-text">
+                                Разноцветный
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Зона морозостойкости (зимостойкость)
+                            </h3>
+                            <p class="card__content-row-text">
+                                6 (до -23С)
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Цветок
+                            </h3>
+                            <p class="card__content-row-text">
+                                Полумахровый
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Зона морозостойкости (зимостойкость)
+                            </h3>
+                            <p class="card__content-row-text">
+                                6 (до -23С)
+                            </p>
+                        </div>
+                        <div class="card__content-row">
+                            <h3 class="card__content-row-title">
+                                Цветок
+                            </h3>
+                            <p class="card__content-row-text">
+                                Полумахровый
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="card__content-rows-btn">
+                        <span>Показать еще</span>
+                        <span>Скрыть еще</span>
+                        <img src="./img/icons/arrow-down-green.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new new_card">
+        <div class="new__container container">
+            <div class="new__top">
+                <h2 class="new__title">
+                    Сопутствующие товары
+                </h2>
+                <p class="new__desc">
+                    С чем сажать
+                </p>
+            </div>
+            <div class="new__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="new__slide is-liked swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/1.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="new__slide swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/2.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="new__slide swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/3.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="new__slide swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/4.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="new__slide swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/5.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="new__slide swiper-slide">
+                        <div class="new__slide-image">
+                            <img src="./img/new/1.webp" alt="">
+                            <b class="new__slide-disc">
+                                -34%
+                            </b>
+                            <div class="new__slide-heart">
+                                <svg>
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="new__slide-info">
+                            <h3 class="new__slide-title">
+                                Роза Казино
+                            </h3>
+                            <p class="new__slide-desc">
+                                2 вида поставки
+                            </p>
+                            <div class="new__slide-price">
+                                от 390 ₽
+                                <span>590 ₽</span>
+                            </div>
+                            <button type="button" class="new__slide-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new__navigation custom-navigation">
+                    <button type="button" class="custom-navigation__btn custom-navigation__btn_prev"></button>
+                    <button type="button" class="custom-navigation__btn custom-navigation__btn_next"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="delivery__container container">
+            <h2 class="delivery__title">
+                Информация о доставке
+            </h2>
+            <div class="delivery__columns">
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">
+                        Способы оплаты
+                    </h3>
+                    <p class="delivery__column-text">
+                        Оплата по счёту, на сайте (карта, СБП, SberPay, T-Pay, наличными курьеру.)
+                    </p>
+                </div>
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">
+                        Способы доставки
+                    </h3>
+                    <p class="delivery__column-text">
+                        Доставляем по России: Почта России, СДЭК, Ozon, Транспортная компания, курьер по Москве (500
+                        руб), самовывоз (Московская обл., г.о. Химки, д. Благовещенка, ул. Центральная, 1).
+                    </p>
+                </div>
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">
+                        Упаковка
+                    </h3>
+                    <p class="delivery__column-text">
+                        Бережно упаковываем каждый товар с учётом выбранного способа доставки: для Почты России и СДЭК
+                        используем надёжные коробки и воздушно-пузырчатую плёнку, для Ozon и ТК — усиленный картон и
+                        фиксацию груза. Отправляем трек-номер и контролируем посылку в пути до получения клиентом.
+                    </p>
+                </div>
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">
+                        Стоимость доставки
+                    </h3>
+                    <p class="delivery__column-text">
+                        Стоимость доставки СДЭК рассчитывается автоматически на сайте — по весу и габаритам
+                        посылки.
+                        Доставка Почтой России и транспортной компанией — по договорённости с клиентом.
+                    </p>
+                </div>
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">
+                        Гарантии
+                    </h3>
+                    <p class="delivery__column-text">
+                        Гарантируем качество посадочного материала
+                        и соответствие сорту.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 @@include("_bottom.html")

@@ -5,6 +5,12 @@
 
 	overflow: hidden;
 
+	&_card {
+		#{$self}__top {
+			align-items: start;
+		}
+	}
+
 	&__container {}
 
 	&__top {
