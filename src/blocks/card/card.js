@@ -2,12 +2,14 @@ import Swiper from "swiper";
 
 (() => {
 
+    const gallery = document.querySelector('.card__gallery');
+    if (!gallery) return;
+
     const swiper = new Swiper('.card__gallery-swiper', {
         spaceBetween: 12,
         slidesPerView: 4,
     });
 
-    const gallery = document.querySelector('.card__gallery');
     const photos = gallery.querySelectorAll('.card__gallery-photo img');
 
     swiper.slides.forEach((slide, index) => {

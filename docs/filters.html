@@ -190,122 +190,196 @@
     <div class="breadcambs container">
         <ul class="breadcambs__list">
             <li class="breadcambs__list-item"><a href="#">Главная</a></li>
-            <li class="breadcambs__list-item"><a href="#">Корзина</a></li>
+            <li class="breadcambs__list-item"><a href="#">Каталог</a></li>
         </ul>
     </div>
-    <section class="basket">
-        <div class="basket__container container">
-            <h2 class="basket__title">Корзина</h2>
-            <div class="basket__content">
-                <div class="basket__items">
-                    <a href="#" class="card-item">
-                        <button type="button" class="card-item__remove"></button>
-                        <div class="card-item__image">
-                            <img loading="lazy" src="./img/news/1.webp" alt="">
-                        </div>
-                        <div class="card-item__content">
-                            <h4 class="card-item__title">
-                                Подгузники
-                            </h4>
-                            <p class="card-item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                            <p class="card-item__price">
-                                3.000 ₽
-                            </p>
-                            <div class="card-item__value custom-range" data-min="1" data-max="10">
-                                <button class="custom-range__btn custom-range__btn--minus">-</button>
-                                <input type="number" class="custom-range__input" value="1">
-                                <button class="custom-range__btn custom-range__btn--plus">+</button>
+    <div class="catalog-filters">
+        <div class="catalog-filters__container container">
+            <h2 class="catalog-filters__title">Фильтры</h2>
+            <div class="catalog-filters__content">
+                <div class="catalog-filters__side">
+                    <div data-filters-js class="filters active">
+                        <button class="filters__close"></button>
+                        <div class="filters__container container">
+                            <div class="filters__row">
+                                <h4 class="filters__row-title">
+                                    Категория
+                                </h4>
+                                <div class="filters__row-items">
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Черемша</span>
+                                    </label>
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Ложка</span>
+                                    </label>
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Кошечки</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filters__row">
+                                <h4 class="filters__row-title">
+                                    Категория&#160;2
+                                </h4>
+                                <div class="filters__row-items">
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Черемша</span>
+                                    </label>
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Ложка</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filters__row">
+                                <h4 class="filters__row-title">
+                                    Категория&#160;3
+                                </h4>
+                                <div class="filters__row-items">
+                                    <label class="filters__item">
+                                        <input type="checkbox">
+                                        <span>Черемша</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filters__buttons">
+                                <button type="button" class="filters__btn btn">Применить</button>
+                                <button type="button" class="filters__btn btn btn-light">Сбросить</button>
                             </div>
                         </div>
-                    </a>
-                    <a href="#" class="card-item">
-                        <button type="button" class="card-item__remove"></button>
-                        <div class="card-item__image">
-                            <img loading="lazy" src="./img/news/1.webp" alt="">
-                        </div>
-                        <div class="card-item__content">
-                            <h4 class="card-item__title">
-                                Подгузники
-                            </h4>
-                            <p class="card-item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                            <p class="card-item__price">
-                                3.000 ₽
-                            </p>
-                            <div class="card-item__value custom-range" data-min="1" data-max="10">
-                                <button class="custom-range__btn custom-range__btn--minus">-</button>
-                                <input type="number" class="custom-range__input" value="1">
-                                <button class="custom-range__btn custom-range__btn--plus">+</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-item">
-                        <button type="button" class="card-item__remove"></button>
-                        <div class="card-item__image">
-                            <img loading="lazy" src="./img/news/1.webp" alt="">
-                        </div>
-                        <div class="card-item__content">
-                            <h4 class="card-item__title">
-                                Подгузники
-                            </h4>
-                            <p class="card-item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                            <p class="card-item__price">
-                                3.000 ₽
-                            </p>
-                            <div class="card-item__value custom-range" data-min="1" data-max="10">
-                                <button class="custom-range__btn custom-range__btn--minus">-</button>
-                                <input type="number" class="custom-range__input" value="1">
-                                <button class="custom-range__btn custom-range__btn--plus">+</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-item">
-                        <button type="button" class="card-item__remove"></button>
-                        <div class="card-item__image">
-                            <img loading="lazy" src="./img/news/1.webp" alt="">
-                        </div>
-                        <div class="card-item__content">
-                            <h4 class="card-item__title">
-                                Подгузники
-                            </h4>
-                            <p class="card-item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                            <p class="card-item__price">
-                                3.000 ₽
-                            </p>
-                            <div class="card-item__value custom-range" data-min="1" data-max="10">
-                                <button class="custom-range__btn custom-range__btn--minus">-</button>
-                                <input type="number" class="custom-range__input" value="1">
-                                <button class="custom-range__btn custom-range__btn--plus">+</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="basket__payment">
-                    <div class="basket__info">
-                        <p>Всего товаров: <span>4</span></p>
-                        <ul>
-                            <li>Подгузники (1)</li>
-                            <li>Подгузники (1)</li>
-                            <li>Подгузники (1)</li>
-                            <li>Подгузники (1)</li>
-                        </ul>
-                        <p>Доставка бесплатно</p>
                     </div>
-                    <p class="basket__value">
-                        Итого: 17.000 рублей
-                    </p>
-                    <button class="basket__btn btn">Оформить заказ</button>
+                    <button class="catalog-filters__open-btn btn">
+                        Фильтры
+                    </button>
+                </div>
+                <div class="catalog-filters__items">
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item">
+                        <button type="button" class="card-item__remove"></button>
+                        <div class="card-item__image">
+                            <img loading="lazy" src="./img/news/1.webp" alt="">
+                        </div>
+                        <div class="card-item__content">
+                            <h4 class="card-item__title">
+                                Подгузники
+                            </h4>
+                            <p class="card-item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                            </p>
+                            <p class="card-item__price">
+                                3.000 ₽
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 
 <footer class="footer">

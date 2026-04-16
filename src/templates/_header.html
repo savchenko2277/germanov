@@ -63,10 +63,54 @@
                     <img loading="lazy" src="./img/icons/search.svg" alt="">
                 </button>
             </div>
-            <button type="button" class="header__catalog-btn">
-                <img loading="lazy" src="./img/icons/catalog.svg" alt="">
-                <span>Каталог</span>
-            </button>
+            <div class="header__catalog-wrapper active">
+                <button type="button" class="header__catalog-btn">
+                    <img loading="lazy" src="./img/icons/catalog.svg" alt="">
+                    <span>Каталог</span>
+                </button>
+                <div class="header__catalog header__catalog_mobile">
+                    <div class="header__catalog-container container">
+                        <div class="catalog-items">
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Луковичные</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/1.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Корневища и клубни</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/2.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Плодово-ягодные</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/3.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Ароматравы</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/4.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Срезка цветов</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/5.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="catalog-item">
+                                <h3 class="catalog-item__title">Мёд</h3>
+                                <div class="catalog-item__image">
+                                    <img src="./img/catalog/6.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="header__list">
                 <li class="header__list-item"><a href="#">О нас</a></li>
                 <li class="header__list-item"><a href="#">Агротуризм</a></li>
@@ -82,7 +126,8 @@
             <a href="tel:+79259042425" class="header__tel">8 (925) 904-24-25</a>
         </div>
     </div>
-    <div class="header__catalog">
+
+    <div class="header__catalog header__catalog_pc">
         <div class="header__catalog-container container">
             <div class="header__catalog-close">
                 <img loading="lazy" src="./img/icons/close.svg" alt="">
@@ -127,4 +172,5 @@
             </div>
         </div>
     </div>
+
 </header>
