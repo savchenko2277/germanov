@@ -48,18 +48,34 @@
 
 	&__top {
 		background: $background;
+		position: relative;
 
 		@include media("<=lg") {
 			display: none;
 		}
 	}
 
+	&__top-bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
 	&__top-container {
-		padding: 16px 0;
+		padding: 20px 0;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
+		z-index: 1;
 	}
 
 	&__info {}
@@ -116,7 +132,7 @@
 	&__logo {
 
 		img {
-			height: fluid(74px, 42px);
+			height: fluid(56px, 42px);
 			width: auto;
 			object-fit: contain;
 		}

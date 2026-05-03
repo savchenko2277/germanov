@@ -8,16 +8,14 @@
 	&__container {}
 
 	&__swiper.swiper {
-		overflow: visible;
 		margin-bottom: 26px;
 	}
 
 	&__slide.swiper-slide {
 		min-height: 375px;
 		overflow: hidden;
-		border-radius: fluid(20px, 12px);
 		position: relative;
-		padding: fluid(62px, 48px) fluid(46px, 24px) fluid(46px, 24px) fluid(46px, 24px);
+		padding: fluid(62px, 48px) 0 fluid(46px, 24px) 0;
 		display: flex;
 		flex-direction: column;
 		transition: all $transition;
@@ -33,7 +31,6 @@
 		z-index: 1;
 		display: flex;
 		flex-direction: column;
-		max-width: 563px;
 		position: relative;
 		height: 100%;
 		flex: 1 1 auto;
@@ -55,11 +52,13 @@
 		font-weight: 500;
 		line-height: 120%;
 		margin-bottom: 12px;
+		max-width: 563px;
 	}
 
 	&__slide-text {
 		font-size: fluid(20px, 16px);
 		margin-bottom: 12px;
+		max-width: 563px;
 	}
 
 	&__slide-btn {
@@ -105,10 +104,15 @@
 		align-items: center;
 		justify-content: space-between;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: calc(100% + 48px);
+		left: 0;
+		transform: translateY(-50%);
+		width: 100%;
 		z-index: 1;
+		padding: 0 24px;
+
+		@include media("<=lg") {
+			display: none !important;
+		}
 	}
 
 	&__items {
